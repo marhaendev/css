@@ -17,16 +17,23 @@ class CleanCode extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(),
-          Text("noRadius").css(
-            p: 10,
-            mt: 10,
-            c: "teal",
-            ct: Colors.white,
-            r: 20,
-            s: 40,
-            onPressed: () {},
-            onLongPress: () {},
-          ),
+          Text("DATA").css(
+            w: double.infinity,
+            p: 0,
+            my: 10,
+            r: 0,
+            borderColor: Colors.teal,
+            borderWidth: 1,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            icon: Icon(Icons.dashboard_rounded),
+            onPressed: () => print("onPressed"),
+            onLongPress: () => print("onLongPress"),
+            onHover: (bool) {
+              if (bool) print("onHover $bool");
+              if (!bool) print("onHover $bool");
+            },
+          )
         ],
       ),
     );
