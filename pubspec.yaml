@@ -1,6 +1,6 @@
 name: css
 description: "A CSS library for Flutter that facilitates minimal code styling of widgets, simplifying the development of consistent and elegant UI."
-version: 1.0.3
+version: 1.0.4
 homepage: https://marhaendev.com
 repository: https://github.com/marhaendev/dart-css
 

@@ -8,5 +8,6 @@ Initial Release.
 - add google_fonts ^6.2.0
 
 ## 1.0.3
-- downgrade google_fonts ^5.1.0 
+- downgrade google_fonts to ^5.1.0 
+- add readme
 
