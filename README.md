@@ -78,22 +78,24 @@ class Main extends StatelessWidget {
 ### Colors
 | Property       | Type    | Description                   | Example                |
 |----------------|---------|-------------------------------|------------------------|
-| cb             | string  | Background color              | cb: "#ffffff"          |
-| ct             | string  | Text color                    | ct: "black"            |
+| cb             | string  | Background color              | cb: Colors.yellow      |
+| ct             | string  | Text color                    | ct: Colors.blue        |
 
 ### Fonts
-| Property       | Type    | Description                   | Example                |
-|----------------|---------|-------------------------------|------------------------|
-| fontSize       | double  | Font size                     | fontSize: 16           |
-| fontFamily     | string  | Font family                   | fontFamily: "Arial"    |
-| fontWeight     | string  | Font weight                   | fontWeight: "bold"     |
+| Property       | Type    | Description                   | Example                        |
+|----------------|---------|-------------------------------|--------------------------------|
+| fontSize       | double  | Font size                     | fontSize: 16                   |
+| fontFamily     | string  | Font family                   | fontFamily: "Poppins"          |
+| fontWeight     | string  | Font weight                   | fontWeight: FontWeight.bold    |
+
+- see fontFamily here: [[https://fonts.google.com](https://fonts.google.com/)]
 
 ### Events
 | Property       | Type    | Description                   | Example                |
 |----------------|---------|-------------------------------|------------------------|
-| onPressed      | function| On press event                | onPressed: myFunction  |
-| onLongPress    | function| On long press event           | onLongPress: myFunction|
-| onHover        | function| On hover event                | onHover: myFunction    |
+| onPressed      | function| On press event                | onPressed: ()=>print("onPressed")  |
+| onLongPress    | function| On long press event           | onLongPress: ()=>print("onLongPress")  |
+| onHover        | function| On hover event                | onHover: onHover: (bool)=>if (bool) print("onHover $bool") |
 
 ### Icon
 | Property       | Type    | Description                   | Example                |
