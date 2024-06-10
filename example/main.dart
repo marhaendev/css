@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:css/css.dart';
 
 void main() {
-  runApp(MaterialApp(home: CleanCode(), debugShowCheckedModeBanner: false));
+  runApp(MaterialApp(home: Main(), debugShowCheckedModeBanner: false));
 }
 
-class CleanCode extends StatelessWidget {
+class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class CleanCode extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(),
-          Text("DATA").css(
+          Text("text").css(
             w: double.infinity,
             p: 0,
             my: 10,

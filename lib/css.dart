@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-extension CleanCode on Widget {
+extension Css on Widget {
   Widget css({
     // padding
     double? w,

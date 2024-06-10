@@ -8,34 +8,42 @@ To use this extension, simply import it and apply it to your widget using the `c
 
 ```
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:your_package_name/css_extension.dart'; // Import the extension
+import 'package:css/css.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(home: Main(), debugShowCheckedModeBanner: false));
 }
 
-class MyApp extends StatelessWidget {
+class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'Hello, World!',
-          ).css( // Apply the CSS extension
-            fontSize: 24,
-            fontFamily: 'Poppins',
-            ct: 'blue', // Text color
-            p: 16, // Padding
-            m: 8, // Margin
-            r: 8, // Border radius
-            onPressed: () {
-              // Button press event
-              print('Button pressed!');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('css Demo'),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(),
+          Text("text").css(
+            w: double.infinity,
+            p: 0,
+            my: 10,
+            r: 0,
+            borderColor: Colors.teal,
+            borderWidth: 1,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            icon: Icon(Icons.dashboard_rounded),
+            onPressed: () => print("onPressed"),
+            onLongPress: () => print("onLongPress"),
+            onHover: (bool) {
+              if (bool) print("onHover $bool");
+              if (!bool) print("onHover $bool");
             },
-          ),
-        ),
+          )
+        ],
       ),
     );
   }
