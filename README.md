@@ -50,47 +50,66 @@ class Main extends StatelessWidget {
 }
 ```
 ## Supported Properties
+
+### Width and Height
+| Property       | Type    | Description                   | Example                |
+|----------------|---------|-------------------------------|------------------------|
+| w              | double  | Width                         | w: double.infinity     |
+| h              | double  | Height                        | h: 100                 |
+
 ### Padding and Margin
-- w: Width
-- h: Height
-- p: Padding (all sides)
-- px: Horizontal padding
-- py: Vertical padding
-- pt: Top padding
-- pr: Right padding
-- pb: Bottom padding
-- pl: Left padding
-- m: Margin (all sides)
-- mx: Horizontal margin
-- my: Vertical margin
-- mt: Top margin
-- mr: Right margin
-- mb: Bottom margin
-- ml: Left margin
+| Property       | Type    | Description                   | Example                |
+|----------------|---------|-------------------------------|------------------------|
+| p              | double  | Padding (all sides)           | p: 16                  |
+| px             | double  | Horizontal padding            | px: 10                 |
+| py             | double  | Vertical padding              | py: 20                 |
+| pt             | double  | Top padding                   | pt: 8                  |
+| pr             | double  | Right padding                 | pr: 12                 |
+| pb             | double  | Bottom padding                | pb: 8                  |
+| pl             | double  | Left padding                  | pl: 12                 |
+| m              | double  | Margin (all sides)            | m: 16                  |
+| mx             | double  | Horizontal margin             | mx: 10                 |
+| my             | double  | Vertical margin               | my: 20                 |
+| mt             | double  | Top margin                    | mt: 8                  |
+| mr             | double  | Right margin                  | mr: 12                 |
+| mb             | double  | Bottom margin                 | mb: 8                  |
+| ml             | double  | Left margin                   | ml: 12                 |
 
 ### Colors
-- cb: Background color
-- ct: Text color
+| Property       | Type    | Description                   | Example                |
+|----------------|---------|-------------------------------|------------------------|
+| cb             | string  | Background color              | cb: "#ffffff"          |
+| ct             | string  | Text color                    | ct: "black"            |
 
 ### Fonts
-- fontSize: Font size
-- fontFamily: Font family
-- fontWeight: Font weight
+| Property       | Type    | Description                   | Example                |
+|----------------|---------|-------------------------------|------------------------|
+| fontSize       | double  | Font size                     | fontSize: 16           |
+| fontFamily     | string  | Font family                   | fontFamily: "Arial"    |
+| fontWeight     | string  | Font weight                   | fontWeight: "bold"     |
 
 ### Events
-- onPressed: On press event
-- onLongPress: On long press event
-- onHover: On hover event
+| Property       | Type    | Description                   | Example                |
+|----------------|---------|-------------------------------|------------------------|
+| onPressed      | function| On press event                | onPressed: myFunction  |
+| onLongPress    | function| On long press event           | onLongPress: myFunction|
+| onHover        | function| On hover event                | onHover: myFunction    |
 
 ### Icon
-- icon: Icon widget
+| Property       | Type    | Description                   | Example                |
+|----------------|---------|-------------------------------|------------------------|
+| icon           | widget  | Icon widget                   | icon: Icon(Icons.add) |
 
 ### Borders
-- borderColor: Border color
-- borderWidth: Border width
-- r: Border radius
+| Property       | Type    | Description                   | Example                |
+|----------------|---------|-------------------------------|------------------------|
+| borderColor    | string  | Border color                  | borderColor: "black"   |
+| borderWidth    | double  | Border width                  | borderWidth: 1.5       |
+| r              | double  | Border radius                 | r: 8                   |
+
 
 ### Notes
 - If a color is provided as a string (e.g., 'blue'), it will be converted to the corresponding Color object.
 - The default font used is 'Poppins', but you can override it by specifying a different font family.
 - The extension also includes a private method _colorFromString to convert color strings to Color objects.
+
