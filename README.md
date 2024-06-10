@@ -103,11 +103,11 @@ class Main extends StatelessWidget {
 | icon           | widget  | Icon widget                   | icon: Icon(Icons.add) |
 
 ### Borders
-| Property       | Type    | Description                   | Example                |
-|----------------|---------|-------------------------------|------------------------|
-| borderColor    | string  | Border color                  | borderColor: "black"   |
-| borderWidth    | double  | Border width                  | borderWidth: 1.5       |
-| r              | double  | Border radius                 | r: 8                   |
+| Property       | Type    | Description                   | Example                    |
+|----------------|---------|-------------------------------|----------------------------|
+| borderColor    | string  | Border color                  | borderColor: Colors.teal   |
+| borderWidth    | double  | Border width                  | borderWidth: 2             |
+| r              | double  | Border radius                 | r: 8                       |
 
 
 ### Notes
