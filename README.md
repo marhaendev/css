@@ -78,24 +78,24 @@ class Main extends StatelessWidget {
 ### Colors
 | Property       | Type    | Description                   | Example                |
 |----------------|---------|-------------------------------|------------------------|
-| cb             | string  | Background color              | cb: Colors.yellow      |
-| ct             | string  | Text color                    | ct: Colors.blue        |
+| cb             | dynamic | Background color              | cb: Colors.yellow      |
+| ct             | dynamic | Text color                    | ct: Colors.blue        |
 
 ### Fonts
 | Property       | Type    | Description                   | Example                        |
 |----------------|---------|-------------------------------|--------------------------------|
 | fontSize       | double  | Font size                     | fontSize: 16                   |
 | fontFamily     | string  | Font family                   | fontFamily: "Poppins"          |
-| fontWeight     | string  | Font weight                   | fontWeight: FontWeight.bold    |
+| fontWeight     | dynamic | Font weight                   | fontWeight: FontWeight.bold    |
 
-- see fontFamily here: [[https://fonts.google.com](https://fonts.google.com/)]
+- see all font family here: [[https://fonts.google.com](https://fonts.google.com/)]
 
 ### Events
 | Property       | Type    | Description                   | Example                |
 |----------------|---------|-------------------------------|------------------------|
 | onPressed      | function| On press event                | onPressed: ()=>print("onPressed")  |
 | onLongPress    | function| On long press event           | onLongPress: ()=>print("onLongPress")  |
-| onHover        | function| On hover event                | onHover: onHover: (bool)=>if (bool) print("onHover $bool") |
+| onHover        | function| On hover event                | onHover: (bool)=>bool? print("onHover $bool"):print("onHover $bool") |
 
 ### Icon
 | Property       | Type    | Description                   | Example                |
@@ -105,13 +105,11 @@ class Main extends StatelessWidget {
 ### Borders
 | Property       | Type    | Description                   | Example                    |
 |----------------|---------|-------------------------------|----------------------------|
-| borderColor    | string  | Border color                  | borderColor: Colors.teal   |
+| borderColor    | dynamic | Border color                  | borderColor: Colors.teal   |
 | borderWidth    | double  | Border width                  | borderWidth: 2             |
 | r              | double  | Border radius                 | r: 8                       |
 
 
 ### Notes
-- If a color is provided as a string (e.g., 'blue'), it will be converted to the corresponding Color object.
-- The default font used is 'Poppins', but you can override it by specifying a different font family.
-- The extension also includes a private method _colorFromString to convert color strings to Color objects.
+
 
